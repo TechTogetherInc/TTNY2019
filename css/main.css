@@ -1,5 +1,5 @@
 
-/* =================================================================== 
+/* ===================================================================
  *
  *  Khronos v1.0 Main Stylesheet
  *  url: www.styleshout.com
@@ -65,8 +65,8 @@ body {
 	color: white;
 }
 
-/* ------------------------------------------------------------------- 
- * links - (_document-setup) 
+/* -------------------------------------------------------------------
+ * links - (_document-setup)
  * ------------------------------------------------------------------- */
 a, a:visited {
 	color: #FD7361;
@@ -104,7 +104,7 @@ h3.subheader {
 /*END Custom CSS*/
 
 /* ===================================================================
- * 03. typography & general theme styles - (_document-setup.scss) 
+ * 03. typography & general theme styles - (_document-setup.scss)
  *
  * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
@@ -273,8 +273,8 @@ hr {
 	height: 0;
 }
 
-/* ------------------------------------------------------------------- 
- * Lists - (_document-setup)  
+/* -------------------------------------------------------------------
+ * Lists - (_document-setup)
  * ------------------------------------------------------------------- */
 ol {
 	list-style: decimal;
@@ -320,8 +320,8 @@ dd {
 	margin: 0 0 0 2rem;
 }
 
-/* ------------------------------------------------------------------- 
- * Spacing - (_document-setup)  
+/* -------------------------------------------------------------------
+ * Spacing - (_document-setup)
  * ------------------------------------------------------------------- */
 button, .button {
 	margin-bottom: 1.2;
@@ -346,8 +346,8 @@ form,
 	margin-bottom: 3rem;
 }
 
-/* ------------------------------------------------------------------- 
- * floated image - (_document-setup)  
+/* -------------------------------------------------------------------
+ * floated image - (_document-setup)
  * ------------------------------------------------------------------- */
 img.pull-right {
 	margin: 1.5rem 0 0 3rem;
@@ -356,7 +356,7 @@ img.pull-left {
 	margin: 1.5rem 3rem 0 0;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * block grids paddings
  * ------------------------------------------------------------------- */
 .bgrid {
@@ -383,7 +383,7 @@ img.pull-left {
 	}
 }
 
- 
+
 /* ===================================================================
  * 04. preloader - (_preloader-1.scss)
  *
@@ -522,8 +522,8 @@ label > input[type="radio"] {
 	top: .15rem;
 }
 
-/* ------------------------------------------------------------------- 
- * Style Placeholder Text  
+/* -------------------------------------------------------------------
+ * Style Placeholder Text
  * ------------------------------------------------------------------- */
 ::-webkit-input-placeholder {
 	color: gray;
@@ -669,11 +669,11 @@ input::-moz-focus-inner {
  *
  * ------------------------------------------------------------------- */
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * additional typo styles - (_additional-typo.scss)
  * ------------------------------------------------------------------- */
 
-/* drop cap 
+/* drop cap
  * ----------------------------------------------- */
 .drop-cap:first-letter {
 	float: left;
@@ -687,7 +687,7 @@ input::-moz-focus-inner {
 	color: #151515;
 }
 
-/* line definition style 
+/* line definition style
  * ----------------------------------------------- */
 .lining dt, .lining dd {
 	display: inline;
@@ -708,7 +708,7 @@ input::-moz-focus-inner {
 	margin-left: -0.2em;
 }
 
-/* dictionary definition style 
+/* dictionary definition style
  * ----------------------------------------------- */
 .dictionary-style dt {
 	display: inline;
@@ -726,7 +726,7 @@ input::-moz-focus-inner {
 	content: counter(definitions, decimal) ". ";
 }
 
-/** 
+/**
  * Pull Quotes
  * -----------
  * markup:
@@ -766,7 +766,7 @@ input::-moz-focus-inner {
 	content: none;
 }
 
-/** 
+/**
  * Stats Tab
  * ---------
  * markup:
@@ -830,8 +830,8 @@ header .row {
 	position: relative;
 }
 
-/* ------------------------------------------------------------------- 
- * header logo - (_layout.css) 
+/* -------------------------------------------------------------------
+ * header logo - (_layout.css)
  * ------------------------------------------------------------------- */
 header .logo {
 	position: absolute;
@@ -859,8 +859,8 @@ header .logo a {
 	transition: all 0.5s ease-in-out;
 }
 
-/* ------------------------------------------------------------------- 
- * header social - (_layout.css)  
+/* -------------------------------------------------------------------
+ * header social - (_layout.css)
  * ------------------------------------------------------------------- */
 header .social-links {
 	position: absolute;
@@ -896,9 +896,9 @@ header .social-links ul li a:focus {
 	color: #FD7361;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
- * header section 
+ * header section
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1024px) {
 	header .logo {
@@ -906,9 +906,9 @@ header .social-links ul li a:focus {
 		margin-top: 42px;
 	}
 	header .logo a {
-		width: 90px;
-		height: 78px;
-		background-size: 90px 78px;
+		width: 200px;
+		height: 63px;
+		background-size: 200px 63px;
 	}
 	header .social-links {
 		right: 18px;
@@ -921,9 +921,9 @@ header .social-links ul li a:focus {
 		margin-top: 36px;
 	}
 	header .logo a {
-		width: 80px;
-		height: 70px;
-		background-size: 80px 70px;
+		width: 180px;
+		height: 57px;
+		background-size: 180px 57px;
 	}
 	header .social-links {
 		right: 45px;
@@ -936,9 +936,9 @@ header .social-links ul li a:focus {
 		margin-top: 30px;
 	}
 	header .logo a {
-		width: 70px;
-		height: 61px;
-		background-size: 70px 61px;
+		width: 160px;
+		height: 51px;
+		background-size: 160px 51px;
 	}
 	header .social-links {
 		right: 41px;
@@ -968,9 +968,9 @@ header .social-links ul li a:focus {
 		margin-top: 30px;
 	}
 	header .logo a {
-		width: 60px;
-		height: 52px;
-		background-size: 60px 52px;
+		width: 140px;
+		height: 44px;
+		background-size: 140px 44px;
 	}
 	header .social-links ul {
 		font-size: 2rem;
@@ -1177,9 +1177,9 @@ header .social-links ul li a:focus {
 	}
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
- * home section 
+ * home section
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:1200px) {
 	.main-content-tablecell #counter {
@@ -1187,6 +1187,7 @@ header .social-links ul li a:focus {
 	}
 	.main-content-tablecell #counter span {
 		font-size: 11rem;
+		text-align: left;
 	}
 }
 @media only screen and (max-width:1024px) {
@@ -1203,6 +1204,7 @@ header .social-links ul li a:focus {
 	}
 	.main-content-tablecell #counter span {
 		font-size: 10.4rem;
+		text-align: left;
 	}
 	.main-content-tablecell .row {
 		padding-bottom: 12rem;
@@ -1229,6 +1231,7 @@ header .social-links ul li a:focus {
 	}
 	.main-content-tablecell #counter span {
 		font-size: 8.4rem;
+		text-align: left;
 	}
 	.main-content-tablecell h1 {
 		font-size: 2.7rem;
@@ -1237,6 +1240,7 @@ header .social-links ul li a:focus {
 @media only screen and (max-width:500px) {
 	.main-content-tablecell #counter span {
 		font-size: 7.2rem;
+		text-align: left;
 	}
 }
 @media only screen and (max-width:400px) {
@@ -1249,6 +1253,7 @@ header .social-links ul li a:focus {
 	.main-content-tablecell #counter span {
 		font-size: 6rem;
 		margin-bottom: .9rem;
+		text-align: left;
 	}
 	.main-content-tablecell #counter span sup {
 		font-size: .2em;
@@ -1287,7 +1292,7 @@ header .social-links ul li a:focus {
 	opacity: .7;
 }
 
-/* tabs 
+/* tabs
  *-------------------------------------------- */
 #info .tabs-wrap {
 	margin: 3rem 0;
@@ -1393,7 +1398,7 @@ header .social-links ul li a:focus {
 	margin-bottom: 0;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
  * tabs
  * ------------------------------------------------------------------- */
@@ -1439,8 +1444,8 @@ header .social-links ul li a:focus {
 	}
 }
 
-/* ------------------------------------------------------------------- 
- * tab about - (_layout.css)  
+/* -------------------------------------------------------------------
+ * tab about - (_layout.css)
  * ------------------------------------------------------------------- */
 .about-list {
 	margin-top: 1.2rem;
@@ -1464,9 +1469,9 @@ header .social-links ul li a:focus {
 	margin-bottom: 1.8rem;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
- * tab about 
+ * tab about
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:768px) {
 	.row .row.about-content {
@@ -1488,8 +1493,8 @@ header .social-links ul li a:focus {
 	}
 }
 
-/* ------------------------------------------------------------------- 
- * tab contact - (_layout.css)  
+/* -------------------------------------------------------------------
+ * tab contact - (_layout.css)
  * ------------------------------------------------------------------- */
 #tab-contact .form-field {
 	position: relative;
@@ -1582,8 +1587,8 @@ header .social-links ul li a:focus {
 	display: block;
 }
 
-/* ------------------------------------------------------------------- 
- * loader animation - (_layout.scss) 
+/* -------------------------------------------------------------------
+ * loader animation - (_layout.scss)
  * ------------------------------------------------------------------- */
 .s-loader {
 	margin: 1.2rem auto 3rem;
@@ -1636,8 +1641,8 @@ header .social-links ul li a:focus {
 	}
 }
 
-/* ------------------------------------------------------------------- 
- * tab subscribe - (_layout.css)  
+/* -------------------------------------------------------------------
+ * tab subscribe - (_layout.css)
  * ------------------------------------------------------------------- */
 #tab-subscribe .form-field input {
 	text-align: center;
@@ -1703,9 +1708,9 @@ header .social-links ul li a:focus {
 	color: #FFFFFF;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
- * cta  
+ * cta
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:650px) {
 	.cta-wrap {
@@ -1852,9 +1857,9 @@ footer .back-to-top a i {
 	margin-left: 15px;
 }
 
-/* ------------------------------------------------------------------- 
+/* -------------------------------------------------------------------
  * responsive:
- * footer  
+ * footer
  * ------------------------------------------------------------------- */
 @media only screen and (max-width:768px) {
 	footer .footer-social-list li a {
