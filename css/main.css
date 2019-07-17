@@ -90,7 +90,7 @@ a.cta-white {
     margin-top: 20px;
     font-weight: 900;
     border-radius: 15px;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-family: 'Open Sans', sans-serif;
 }
 
@@ -109,7 +109,7 @@ h3.subheader {
  * ------------------------------------------------------------------- */
 h1, h2, h3, h4, h5, h6, .h01, .h02, .h03, .h04, .h05, .h06 {
 	font-family: "roboto-black", sans-serif;
-	color: white;
+	color: black;
 	font-style: normal;
 	text-rendering: optimizeLegibility;
 	margin-bottom: 2.1rem;
@@ -284,6 +284,7 @@ ul {
 }
 li {
 	display: list-item;
+	color: black;
 }
 ol, ul {
 	margin-left: 1.7rem;
@@ -554,7 +555,7 @@ input[type="button"] {
 	display: inline-block;
 	font-family: "roboto-black", sans-serif;
 	font-size: 1.4rem;
-	text-transform: uppercase;
+	/* text-transform: uppercase; */
 	letter-spacing: .3rem;
 	height: 5.4rem;
 	line-height: 5.4rem;
@@ -928,6 +929,7 @@ header .social-links ul li a:focus {
 	header .social-links {
 		right: 45px;
 		top: 48px;
+		margin-top: 40px;
 	}
 }
 @media only screen and (max-width:600px) {
@@ -1093,6 +1095,11 @@ header .social-links ul li a:focus {
 	max-width: 600px;
 	position: relative;
 }
+
+.main-content-tablecell h2 {
+	color: #FFFFFF;
+}
+
 .main-content-tablecell p {
 	color: rgba(255, 255, 255, 0.3);
 	font-family: "roboto-regular", sans-serif;
