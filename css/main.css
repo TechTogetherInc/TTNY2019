@@ -2,23 +2,100 @@
 	* 01. Bootstrap override
 	*
 	* ------------------------------------------------------------------- */
-	.footer {
-	  background-color: #E73F33;
+.footer {
+  background-color: #E73F33;
+}
+@media (min-width: 576px) {
+	.navbar {
+    padding-top: .5rem;
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    padding-left: 1rem;
 	}
+}
+@media (min-width: 992px) {
+	.navbar-expand-lg .navbar-nav .nav-link {
+			padding-right: 2rem;
+			padding-left: 2rem;
+	}
+}
+.btn {
+		border-radius: 35px;
+		padding-left: 16px;
+		padding-right: 16px;
+}
+.btn-primary {
+    color: #fff;
+    background-color: #E73F33;
+    border-color: #E73F33;
+}
+.navbar-button {
+	padding-top: 8px;
+	padding-bottom: 8px;
+	padding-left: 32px;
+	padding-right: 32px;
+}
+.home-button {
+	padding-left: 48px;
+	padding-right: 48px;
+}
 
 /* ===================================================================
 	* 02. Custom style
 	*
 	* ------------------------------------------------------------------- */
-
-.section-title {
+#home {
+	  height: 100vh;
+}
+.bg-cloud-1 {
+	background-image: url('../images/cloud-1.png');
+	background-repeat: no-repeat;
+	background-size: auto;
+}
+.bg-sol {
+	background-image: url('../images/sol.png');
+	background-repeat: no-repeat;
+	background-size: 26%;
+  background-position: right bottom;
+}
+/* .bg-ribbon {
+  display: inherit;
+	background-image: url('../images/home-ribbon.svg');
+	background-repeat: no-repeat;
+	background-size: auto;
+} */
+@media (max-width: 576px) {
+  .bg-sol {
+  	background-image: url('../images/sol.png');
+  	background-repeat: no-repeat;
+  	background-size: 35%;
+    background-position: right 65%;
+  }
+}
+.home-text-3, .home-text-4, .section-title {
 	text-transform: uppercase;
+}
+.home-text-1 {
+	font-size: 4.5rem;
+	line-height: .3;
+  padding-top: 15%;
+  margin-bottom: 0px;
+	}
+@media (max-width: 576px) {
+	.home-text-1 {
+		font-size: 3rem;
+	}
+}
+.home-text-2 {
+	font-size: 8rem;
+}
+.home-text-4 {
+	font-size: 1rem;
 }
 .footer-social-list {
 	list-style: none;
 	display: inline-flex;
 }
-
 .footer-social-list li {
 	padding-left: 25px;
 	padding-right: 25px;
