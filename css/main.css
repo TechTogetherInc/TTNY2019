@@ -120,6 +120,24 @@ mark {
 .home-text-4 {
 	font-size: 1rem;
 }
+#home .btn-primary, #home .btn-primary:active, #home .btn-primary:visited {
+  background-color: #52D9F6;
+  border-color: #52D9F6;
+}
+#home .btn-primary:hover {
+  background-color: #808CFB;
+  border-color: #808CFB;
+}
+#home .btn-outline-secondary, #home .btn-outline-secondary:active, #home .btn-outline-secondary:visited {
+  color: #52D9F6;
+  border-color: #52D9F6;
+}
+#home .btn-outline-secondary:hover {
+  background-color: #808CFB;
+  color: white;
+  border-color: #808CFB;
+}
+
 #about {
   background-image: url('../images/skyline.svg'),
                     url('../images/blue-1.svg');
