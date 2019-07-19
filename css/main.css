@@ -8,6 +8,9 @@ hr {
   width: 80px;
   border-top: 5px solid #E73F33;
 }
+section {
+  margin-bottom: 10vh;
+}
 .footer {
   background-color: #E73F33;
 }
@@ -99,10 +102,60 @@ hr {
 }
 #about {
 	  height: 60vh;
-    background-image: url('../images/skyline.png');
-    background-size: 90vw;
+    background-image: url('../images/skyline.svg'),
+                      url('../images/blue-1.svg');
+    background-size: 90vw, contain;
     background-repeat: no-repeat;
-    background-position: bottom center;
+    background-position: bottom 5vh center, bottom center;
+}
+#coding-experience {
+    background-image: url('../images/laptop.png'),
+                      url('../images/blue-2.svg');
+    background-size: 25vw, contain;
+    background-repeat: no-repeat;
+    background-position: bottom 5vh right 5vw, bottom center;
+}
+@media (min-width: 768px) {
+  #coding-experience {
+    height: 60vh;
+  }
+}
+#photos1 {
+    background-image: url('../images/blue-3.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    text-align: center;
+}
+#photos1 img {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media (min-width: 768px) {
+  #photos1 {
+    height: 60vh;
+  }
+  #photos1 img {
+    padding-top: 15vh;
+    padding-bottom: 15px;
+  }
+}
+#challenges {
+    background-image: url('../images/trophy.svg'),
+                      url('../images/blue-4.svg');
+    background-size: 30vh, contain;
+    background-repeat: no-repeat;
+    background-position: center left 10vw, bottom center;
+}
+#get-involved img {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  height: 30vh;
+}
+@media (max-width: 768px) {
+  #get-involved img {
+    width: auto;
+  }
 }
 .footer-social-list {
 	list-style: none;
