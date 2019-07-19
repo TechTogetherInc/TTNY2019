@@ -2,6 +2,12 @@
 	* 01. Bootstrap override
 	*
 	* ------------------------------------------------------------------- */
+hr {
+  text-align: left;
+  margin-left: 20px;
+  width: 80px;
+  border-top: 5px solid #E73F33;
+}
 .footer {
   background-color: #E73F33;
 }
@@ -46,30 +52,28 @@
 	* ------------------------------------------------------------------- */
 #home {
 	  height: 100vh;
+    background-image: url('../images/home-ribbon.svg'),
+                      url('../images/sol.png'),
+                      url('../images/cloud-1.png'),
+                      url('../images/cloud-2.png'),
+                      url('../images/cloud-3.png');
+    background-size: 100vw, 25vw, 33vw, 10vw, 12vw;
+    background-repeat: no-repeat;
+    background-position: bottom 60px center,
+                         bottom 12vh right 100px,
+                         top 3vh left,
+                         bottom 22vh center,
+                         bottom 35vh right 85px;
 }
-.bg-cloud-1 {
-	background-image: url('../images/cloud-1.png');
-	background-repeat: no-repeat;
-	background-size: auto;
-}
-.bg-sol {
-	background-image: url('../images/sol.png');
-	background-repeat: no-repeat;
-	background-size: 26%;
-  background-position: right bottom;
-}
-/* .bg-ribbon {
-  display: inherit;
-	background-image: url('../images/home-ribbon.svg');
-	background-repeat: no-repeat;
-	background-size: auto;
-} */
 @media (max-width: 576px) {
-  .bg-sol {
-  	background-image: url('../images/sol.png');
-  	background-repeat: no-repeat;
-  	background-size: 35%;
-    background-position: right 65%;
+  #home {
+  	  height: 100vh;
+      background-image: url('../images/home-ribbon.svg'),
+                        url('../images/sol.png'),
+                        url('../images/cloud-3.png');
+      background-size: 160vw, 80vw, 45vw;
+      background-repeat: no-repeat;
+      background-position: bottom 100px center, center bottom 110px, top right;
   }
 }
 .home-text-3, .home-text-4, .section-title {
@@ -88,9 +92,17 @@
 }
 .home-text-2 {
 	font-size: 8rem;
+  font-weight: bold;
 }
 .home-text-4 {
 	font-size: 1rem;
+}
+#about {
+	  height: 60vh;
+    background-image: url('../images/skyline.png');
+    background-size: 90vw;
+    background-repeat: no-repeat;
+    background-position: bottom center;
 }
 .footer-social-list {
 	list-style: none;
