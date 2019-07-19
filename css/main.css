@@ -2,6 +2,14 @@
 	* 01. Bootstrap override
 	*
 	* ------------------------------------------------------------------- */
+body {
+  font-size: 1.6rem;
+}
+@media (max-width: 768px) {
+  body {
+    font-size: 1.3rem;
+  }
+}
 hr {
   text-align: left;
   margin-left: 20px;
@@ -10,6 +18,14 @@ hr {
 }
 section {
   margin-bottom: 10vh;
+}
+ul {
+  list-style-image: url('../images/Rectangle.4.24.svg');
+}
+mark {
+  padding-top: 0;
+  padding-bottom: 0.1em;
+  background-color: rgba(223, 129, 110, 0.17);
 }
 .footer {
   background-color: #E73F33;
@@ -87,10 +103,14 @@ section {
 	line-height: .3;
   padding-top: 15%;
   margin-bottom: 0px;
+  letter-spacing: 5px;
+  font-weight: 600;
 	}
 @media (max-width: 576px) {
 	.home-text-1 {
 		font-size: 3rem;
+    letter-spacing: inherit;
+    font-weight: 600;
 	}
 }
 .home-text-2 {
@@ -101,31 +121,38 @@ section {
 	font-size: 1rem;
 }
 #about {
-	  height: 60vh;
-    background-image: url('../images/skyline.svg'),
-                      url('../images/blue-1.svg');
-    background-size: 90vw, contain;
-    background-repeat: no-repeat;
-    background-position: bottom 5vh center, bottom center;
+  background-image: url('../images/skyline.svg'),
+                    url('../images/blue-1.svg');
+  background-size: 90vw, contain;
+  background-repeat: no-repeat;
+  background-position: bottom 5vh center, bottom center;
+}
+@media (min-width: 768px) {
+  #about {
+    height: 100vh;
+  }
 }
 #coding-experience {
-    background-image: url('../images/laptop.png'),
-                      url('../images/blue-2.svg');
-    background-size: 25vw, contain;
-    background-repeat: no-repeat;
-    background-position: bottom 5vh right 5vw, bottom center;
+  background-image: url('../images/laptop.png'),
+                    url('../images/blue-2.svg');
+  background-size: 25vw, contain;
+  background-repeat: no-repeat;
+  background-position: bottom 5vh right 5vw, bottom center;
 }
 @media (min-width: 768px) {
   #coding-experience {
-    height: 60vh;
+    height: 80vh;
+  }
+  #coding-experience h1 {
+    padding-top: 25vh;
   }
 }
 #photos1 {
-    background-image: url('../images/blue-3.svg');
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center center;
-    text-align: center;
+  background-image: url('../images/blue-3.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
 }
 #photos1 img {
   padding-top: 15px;
@@ -141,11 +168,11 @@ section {
   }
 }
 #challenges {
-    background-image: url('../images/trophy.svg'),
-                      url('../images/blue-4.svg');
-    background-size: 30vh, contain;
-    background-repeat: no-repeat;
-    background-position: center left 10vw, bottom center;
+  background-image: url('../images/trophy.svg'),
+                    url('../images/blue-4.svg');
+  background-size: 30vh, contain;
+  background-repeat: no-repeat;
+  background-position: center left 10vw, bottom center;
 }
 #get-involved {
     text-align: center;
@@ -164,13 +191,140 @@ section {
     width: auto;
   }
 }
+@media (min-width: 768px) {
+  #schedule {
+    background-image: url('../images/blue-3.svg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+#schedule h2 {
+  font-size: 1.6rem;
+  padding-top: 45px;
+  padding-bottom: 15px;
+  color: #E73F33;
+}
+#schedule ul {
+  padding-left: 0px;
+  list-style-type: none;
+  list-style-image: none;
+}
+#schedule img {
+  padding-top: 45px;
+}
+@media (min-width: 768px) {
+  #faq {
+    background-image: url('../images/blue-6.svg');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+  }
+}
+@media (max-width: 768px) {
+  #faq {
+    height: auto;
+  }
+  .faq-content {
+    padding: inherit;
+  }
+}
+.faq-content {
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+#faq li {
+  padding-left: 18px;
+}
+#photos2 {
+  background-image: url('../images/blue-7.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+}
+#photos2 img {
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+@media (min-width: 768px) {
+  #photos2 {
+    height: 60vh;
+  }
+  #photos2 img {
+    padding-top: 15vh;
+    padding-bottom: 15px;
+  }
+}
+#contact {
+  background-image: url('../images/paperplane.svg'),
+                    url('../images/mailbox.svg'),
+                    url('../images/blue-8.svg');
+  background-size: 200px, 200px, contain;
+  background-repeat: no-repeat;
+  background-position: 45% top, center right 5vw, center top;
+}
+@media (max-width: 768px) {
+  #contact {
+    background-image: url('../images/mailbox.svg'),
+                      url('../images/blue-8.svg');
+    background-size: 160px, contain;
+    background-position: bottom right 5vw, center top;
+  }
+}
+@media (min-width: 768px) {
+  #contact {
+    height: 75vh;
+  }
+  #contact h1 {
+    padding-top: 20vh;
+  }
+}
+#contact a {
+  color: black;
+}
+#back-to-top {
+  margin-bottom: 15px;
+}
+#back-to-top a {
+  color: #E5E5E5;
+  text-transform: uppercase;
+}
+footer span {
+  color: white;
+}
+@media (min-width: 1023px) {
+  footer span {
+    letter-spacing: 0.06em;
+  }
+}
+footer .form-control {
+  border: 1px solid #FFF;
+}
+footer .input-group-text {
+  border: 1px solid #FFF;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  border-top-width: 2px;
+  border-bottom-width: 2px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-right-width: 3px;
+  border-left-width: 3px;
+  background-color: #E73F33;
+  color: white;
+}
+footer ::placeholder {
+  color: #dee2e6;
+  font-style: italic;
+}
 .footer-social-list {
 	list-style: none;
 	display: inline-flex;
 }
 .footer-social-list li {
-	padding-left: 25px;
-	padding-right: 25px;
+	padding-left: 5px;
+	padding-right: 5px;
 }
 
 
