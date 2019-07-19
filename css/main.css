@@ -147,6 +147,13 @@ section {
     background-repeat: no-repeat;
     background-position: center left 10vw, bottom center;
 }
+#get-involved {
+    text-align: center;
+}
+#get-involved hr {
+    text-align: center;
+    margin: auto;
+}
 #get-involved img {
   padding-top: 15px;
   padding-bottom: 15px;
