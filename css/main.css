@@ -308,6 +308,9 @@ mark {
   color: #E5E5E5;
   text-transform: uppercase;
 }
+footer {
+  padding-bottom: 3rem!important;
+}
 footer span {
   color: white;
 }
@@ -336,16 +339,84 @@ footer ::placeholder {
   color: #dee2e6;
   font-style: italic;
 }
+footer form span {
+  display: block;
+  text-overflow: ellipsis;
+  overflow: visible;
+  white-space: nowrap;
+}
+.social-fb, .social-twitter {
+  width: 40px;
+  padding-top: 8vw;
+}
+.social-insta {
+  width: 42px;
+  padding-top: 8vw;
+}
+@media (min-width: 768px) {
+  footer form span {
+    font-size: 1.7vw;
+  }
+  .social-fb, .social-twitter {
+    width: 48px;
+    padding-top: 5px;
+  }
+  .social-insta {
+    width: 51px;
+    padding-top: 4.5px;
+  }
+}
+@media (min-width: 1024px) {
+  footer form span {
+    font-size: 1.8vw;
+  }
+  .social-fb, .social-twitter {
+    width: 60px;
+    padding-top: 3px;
+  }
+  .social-insta {
+    width: 64px;
+    padding-top: 2px;
+  }
+}
+@media (min-width: 1600px) {
+  footer form span {
+    font-size: 1.9vw;
+  }
+  .social-fb, .social-twitter {
+    width: 77px;
+    padding-top: 6px;
+  }
+  .social-insta {
+    width: 82px;
+    padding-top: 5px;
+  }
+}
+@media (min-width: 2160px) {
+  footer form span {
+    font-size: 1.95vw;
+  }
+}
 .footer-social-list {
 	list-style: none;
 	display: inline-flex;
+  padding-inline-start: 0px;
+  text-align: right;
 }
 .footer-social-list li {
 	padding-left: 5px;
 	padding-right: 5px;
 }
-
-
+@media (max-width: 767.9px) {
+  .footer-social-list {
+    display: list-item;
+    text-align: center;
+  }
+  .footer-social-list li {
+    display: inline-block;
+    text-align: center;
+  }
+}
 
 /* ===================================================================
 	* 03. preloader - (_preloader-1.scss)
