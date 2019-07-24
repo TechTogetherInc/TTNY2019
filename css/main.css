@@ -18,6 +18,7 @@ hr {
 }
 section {
   margin-bottom: 10vh;
+  transition: background-size 1s, background-position 1s;
 }
 ul {
   list-style-image: url('../images/Rectangle.4.24.svg');
@@ -36,6 +37,7 @@ mark {
     padding-right: 1rem;
     padding-bottom: 2rem;
     padding-left: 1rem;
+    transition: padding 1s;
   }
 }
 @media (min-width: 992px) {
@@ -63,6 +65,9 @@ mark {
 .home-button {
   padding-left: 48px;
   padding-right: 48px;
+}
+.wow {
+  visibility: hidden;
 }
 
 /* ===================================================================
@@ -164,6 +169,61 @@ mark {
   }
   .home-text-1 {
     padding-top: 40px;
+  }
+}
+/* Home animation */
+.home-animation {
+  animation-name: home-animation;
+  animation-duration: 6s;
+}
+@keyframes home-animation {
+  0% {
+    background-position: bottom 60px left -100vw, bottom -60vh right 100px, top 3vh left -35vw, bottom 22vh left -10vw, bottom 35vh right -15vw
+  }
+  16% {
+    background-position: bottom 60px left -100vw, bottom -60vh right 100px, top 3vh left -35vw, bottom 22vh left -10vw, bottom 35vh right -15vw
+  }
+  32% {
+    background-position: bottom 60px center, bottom -60vh right 100px, top 3vh left -35vw, bottom 22vh left -10vw, bottom 35vh right -15vw
+  }
+  48% {
+    background-position: bottom 60px center, bottom 12vh right 100px, top 3vh left, bottom 22vh left -10vw, bottom 35vh right -15vw
+  }
+  75% {
+    background-position: bottom 60px center, bottom 12vh right 100px, top 3vh left, bottom 22vh left -10vw, bottom 35vh right -15vw
+  }
+  100% {
+    background-position: bottom 60px center,
+    bottom 12vh right 100px,
+    top 3vh left,
+    bottom 22vh center,
+    bottom 35vh right 85px;
+  }
+}
+.home-animation-mobile {
+  animation-name: home-animation-mobile;
+  animation-duration: 6s;
+}
+@keyframes home-animation-mobile {
+  0% {
+    background-position: bottom 100px left -950px, center bottom -700px, top right -260px;
+  }
+  16% {
+    background-position: bottom 100px left -950px, center bottom -700px, top right -260px;
+  }
+  32% {
+    background-position: bottom 100px center, center bottom -700px, top right -260px;
+  }
+  48% {
+    background-position: bottom 100px center, center bottom 110px, top right -260px;
+  }
+  75% {
+    background-position: bottom 100px center, center bottom 110px, top right -260px;
+  }
+  100% {
+    background-position: bottom 100px center,
+    center bottom 110px,
+    top right;
   }
 }
 #about {
@@ -376,10 +436,12 @@ footer form span {
 .social-fb, .social-twitter {
   width: 40px;
   padding-top: 8vw;
+  transition: width 1s;
 }
 .social-insta {
   width: 42px;
   padding-top: 8vw;
+  transition: width 1s;
 }
 @media (min-width: 768px) {
   footer form span {
