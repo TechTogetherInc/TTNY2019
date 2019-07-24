@@ -22,10 +22,21 @@ wow.init();
 ------------------------------------------------------ */
  $(window).load(function() {
     // will first fade out the loading animation
-    $("#loader").fadeOut("slow", function(){
+    $("#loader").fadeOut("fast", function(){
 
       // will fade out the whole DIV that covers the website.
-      $("#preloader").delay(300).fadeOut("slow");
+      $("#preloader").delay(300).fadeOut("fast");
 
     });
-  })
+  });
+  $(document).ready(function() {
+   // Home animation preload
+   if ($(window).width() <= 576) {
+     $("#home").addClass("home-animation-mobile");
+   }
+   else {
+     $("#home").addClass("home-animation");
+   }
+   $("#home-title, #home-subtitle").addClass("wow");
+   $("#home-buttons").addClass("animated");
+ });
