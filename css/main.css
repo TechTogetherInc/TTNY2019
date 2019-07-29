@@ -125,6 +125,21 @@ mark {
   border-color: #808CFB;
 }
 /* responsive home background fix */
+@media (min-width: 1920px) {
+  .home-text-1 {
+    padding-top: 23vh;
+  }
+}
+@media (min-width: 1680px) {
+  .home-text-1 {
+    padding-top: 21vh;
+  }
+}
+@media (min-width: 1440px) {
+  .home-text-1 {
+    padding-top: 17vh;
+  }
+}
 @media (max-width: 576px) {
   #home {
     height: 100vh;
