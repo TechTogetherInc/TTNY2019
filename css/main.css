@@ -334,6 +334,11 @@ mark {
 #schedule img {
   padding-top: 45px;
 }
+@media (max-width: 767.6px) {
+  #schedule p {
+    text-align: center;
+  }
+}
 @media (min-width: 768px) {
   #faq {
     background-image: url('../images/blue-6.svg');

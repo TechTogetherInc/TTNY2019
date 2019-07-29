@@ -39,4 +39,17 @@ wow.init();
    }
    $("#home-title, #home-subtitle").addClass("wow");
    $("#home-buttons").addClass("animated");
+   // Initialize smooth scroll
+   var scroll = new SmoothScroll('a[href*="#"]', {
+   	speed: 1500,
+   	speedAsDuration: true,
+    offset: function (anchor, toggle) {
+  		// An example returning different values based on whether the clicked link was in the header nav or not
+  		if (toggle.classList.contains('nav-link')) {
+  			return 75;
+  		} else {
+  			return 0;
+  		}
+  	}
+   });
  });
