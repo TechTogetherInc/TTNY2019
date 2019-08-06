@@ -382,6 +382,26 @@ mark {
     padding-bottom: 15px;
   }
 }
+#sponsors {
+  text-align: center;
+}
+#sponsors hr {
+  text-align: center;
+  margin: auto;
+}
+#sponsors img {
+  padding-top: 50px;
+  padding-bottom: 15px;
+}
+#sponsors i {
+  padding-top: 50px;
+}
+@media (max-width: 768px) {
+  #sponsors img {
+    height: auto;
+    width: 95vw;
+  }
+}
 #contact {
   background-image: url('../images/paperplane.svg'),
   url('../images/mailbox.svg'),
