@@ -20,36 +20,39 @@ wow.init();
 /* --------------------------------------------------- */
 /* Preloader
 ------------------------------------------------------ */
- $(window).load(function() {
-    // will first fade out the loading animation
-    $("#loader").fadeOut("fast", function(){
+$(window).load(function() {
+  // will first fade out the loading animation
+  $("#loader").fadeOut("fast", function(){
 
-      // will fade out the whole DIV that covers the website.
-      $("#preloader").delay(300).fadeOut("fast");
+    // will fade out the whole DIV that covers the website.
+    $("#preloader").delay(300).fadeOut("fast");
+    $("#mlh-trust-badge").css("visibility", "visible");
+    $("#mlh-trust-badge").css("opacity", "1");
 
-    });
   });
-  $(document).ready(function() {
-   // Home animation preload
-   if ($(window).width() <= 576) {
-     $("#home").addClass("home-animation-mobile");
-   }
-   else {
-     $("#home").addClass("home-animation");
-   }
-   $("#home-title, #home-subtitle").addClass("wow");
-   $("#home-buttons").addClass("animated");
-   // Initialize smooth scroll
-   var scroll = new SmoothScroll('a[href*="#"]', {
-   	speed: 1500,
-   	speedAsDuration: true,
-    offset: function (anchor, toggle) {
-  		// An example returning different values based on whether the clicked link was in the header nav or not
-  		if (toggle.classList.contains('nav-link')) {
-  			return 75;
-  		} else {
-  			return 0;
-  		}
-  	}
-   });
+});
+$(document).ready(function() {
+ // Home animation preload
+ if ($(window).width() <= 576) {
+   $("#home").addClass("home-animation-mobile");
+ }
+ else {
+   $("#home").addClass("home-animation");
+ }
+ $("#home-title, #home-subtitle").addClass("wow");
+ $("#home-buttons").addClass("animated");
+
+ // Initialize smooth scroll
+ var scroll = new SmoothScroll('a[href*="#"]', {
+ 	speed: 1500,
+ 	speedAsDuration: true,
+  offset: function (anchor, toggle) {
+		// An example returning different values based on whether the clicked link was in the header nav or not
+		if (toggle.classList.contains('nav-link')) {
+			return 75;
+		} else {
+			return 0;
+		}
+	}
  });
+});

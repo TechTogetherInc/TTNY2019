@@ -61,6 +61,7 @@ mark {
   padding-bottom: 8px;
   padding-left: 32px;
   padding-right: 32px;
+  margin-right: 120px;
 }
 .home-button {
   padding-left: 48px;
@@ -74,6 +75,28 @@ mark {
 	* 02. Custom style
 	*
 	* ------------------------------------------------------------------- */
+#mlh-trust-badge {
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0s, opacity 0.1s linear;
+  transition-delay: 0.5s;
+  max-width: 100px;
+  min-width: 60px;
+  position: fixed;
+  right: 20px;
+  top: 0;
+  width: 10%;
+  z-index: 10000;
+}
+@media (max-width: 992px) {
+  #mlh-trust-badge {
+    transition: visibility 0s, opacity 0.5s linear;
+    transition-delay: 1s;
+    position: absolute;
+    right: 100px;
+    top: 0;
+  }
+}
 #home {
   height: 100vh;
   background-image: url('../images/home-ribbon.svg'),
