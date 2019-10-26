@@ -27,7 +27,7 @@
   <!--Sidebar-->
 
   <ul id="desktop-nav" class="side-nav fixed">
-    <img src="assets/imgs/logo.png" style="display:block;margin-bottom:20px;padding-top:40px; max-width:95%">
+    <a href="../"><img src="assets/imgs/logo.png" style="display:block;margin-bottom:20px;padding-top:40px; max-width:95%"></a>
     <li><a href="https://techtogether-new-york.slack.com/messages/CPE64H8M6" target="_blank" class="menu-link">Announcements</a></li>
     <li><a href="https://techtogether-new-york.slack.com/messages/CPDLYSQU9" target="_blank" class="menu-link">Schedule</a></li>
     <li><a href="../#sponsors" target="_blank" class="menu-link">Sponsors</a></li>
@@ -124,7 +124,7 @@
   <!--anything not in the side menu should go within these main tags-->
   <main id="main-sidebar">
 
-   <a href="index.html" class="mobile_logo"><img src="assets/imgs/logo.png" width="100%" ></a>
+   <a href="../" class="mobile_logo"><img src="assets/imgs/logo.png" width="100%" ></a>
 
    <!--countdown clock-->
    <!-- <div class="row">
@@ -134,7 +134,7 @@
    <div class="row countdownrow" style="vertical-align:middle; max-width:100%">
       <div class = "col s12 m12 l3">
         <br>
-        <h5 align="center" class="lighter" style="line-height: 3vw;margin-top: -.2em; margin-bottom:1em;">Time Until Opening Ceremony</h5>
+        <h5 align="center" class="lighter" style="margin-top: -.2em; margin-bottom:1em;">Time Until Submission Deadline</h5>
       </div>
 
       <div class="col s12 m12 l9 center" style="vertical-align:middle;position:relative;">
@@ -177,7 +177,7 @@
               countdown: true,
               language: 'Custom'
             };
-            var date = new Date("October 25, 2019 19:30:00").getTime()/1000;
+            var date = new Date("October 27, 2019 11:00:00").getTime()/1000;
             var countdown = date - ((new Date().getTime()) / 1000);
             countdown = Math.max(1, countdown);
             // $(document).ready(function() {
@@ -203,10 +203,10 @@
       </div>
       <div class="col s6 m3 l3">
         <div class="card">
-          <a href="https://techtogether-new-york.slack.com/" target="_blank">
+          <a href="https://join.slack.com/t/techtogether-new-york/shared_invite/enQtNzk4MDY0NjQ4MzQzLTVkM2YzZDQ4YzM1ZDQ5MTE1MmJjNmZkZjU0NTY2MjZkNTMwMzlhZWRiMjAxOGVkYTRhNTZhNDE3ZDc2NmZkZGE" target="_blank">
             <div class="card-content center-align">
               <i class="fab fa-slack fa-6x"></i>
-              <h5 class="black-text">Slack</h5>
+              <h5 class="black-text">Join Slack</h5>
             </div>
           </a>
         </div>
@@ -267,6 +267,6 @@
    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
    <script src="assets/js/ham_menu.js"> </script>
 
-   </body>
+</body>
 
 </html>
